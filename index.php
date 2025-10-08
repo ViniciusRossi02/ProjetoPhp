@@ -15,7 +15,7 @@
     <form method="POST" action="recebe-form.php">
 
         <div class="mb-3">
-            <label for="nome" class="form-label">Digite seu nome</label>
+            <label for="nome" class="form-label" require>Digite seu nome</label>
             <input type="text" class="form-control" id="nome" name="nome">
         </div>
 
