@@ -20,11 +20,8 @@ print_r($_POST);
     $semestres_faltando =   $semestre_curso - $semestre_atual;
     
     echo "<p> $nome esta no $semestre_atual semestre e faltam $semestres_faltando semestres para conclusão.</p>";
-} else {
-    echo "<p style='color: red;'>Não veio nada por POST!</p>";
-}
 
-if (isset($numero)) {
+    if (isset($numero)) {
     for($i = 1; $i <=10; $i++){
         echo "<p> TABUADA</p>";
         echo "<p> $numero x $i = " . ($numero * $i) . "</p>";
@@ -32,6 +29,11 @@ if (isset($numero)) {
 }else {
     echo "<p style='color: red;'> NÃO FOI INFORMADO NUMERO ALGUM!!!</p>";
 }
+} else {
+    echo "<p style='color: red;'>Não veio nada por POST!</p>";
+}
+
+
 
 ?>
 
